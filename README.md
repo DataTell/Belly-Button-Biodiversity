@@ -1,5 +1,5 @@
 # Belly-Button-Biodiversity
-Plot.ly Homework - Belly Button Biodiversity Dashboard
+Plotly Homework - Belly Button Biodiversity Dashboard
 
 ![Bacteria by filterforge.com](Images/bacteria.jpg)
 
