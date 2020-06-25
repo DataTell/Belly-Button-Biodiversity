@@ -30,7 +30,7 @@ function optionChanged(id) {
 // Demographic Info
 function getMetadata(id) {
     // Read "metadata" from json file for each subject and assign it to a variable
-    d3.json('/../../data/samples.json')
+    d3.json('data/samples.json')
         .then(data => {
         var subjectData = data.metadata
         .filter(subject => subject.id.toString() === id)[0];
@@ -53,7 +53,7 @@ getName();
 // Bar chart
 function getBar(id) {
     // Read data from json file for each sample, assign it to a variable, and plot it
-    d3.json('/../../data/samples.json')
+    d3.json('data/samples.json')
         .then(data => {
         var sortedSample = data.samples
         .filter(sample => sample.id === id)[0];
@@ -143,7 +143,7 @@ function getBar(id) {
 // Bubble chart
 function getBubble(id) {
     // Read data from json file for each sample, assign it to a variable, and plot it
-    d3.json('/../../data/samples.json')
+    d3.json('data/samples.json')
         .then(data => {
         var sortedSample = data.samples
         .filter(sample => sample.id === id)[0];
@@ -236,7 +236,7 @@ function getBubble(id) {
 // Gauge chart
 function getGauge(id) {
     // Read "metadata" from json file for each subject and assign it to a variable
-    d3.json('/../../data/samples.json')
+    d3.json('data/samples.json')
         .then(data => {
         var subjectData = data.metadata
         .filter(subject => subject.id.toString() === id)[0];
