@@ -3,7 +3,7 @@ function getName() {
     // Select dropdown menu id and assign it to a variable
     var dropdownMenu = d3.select('#selDataset');
     // Read "names" values from json file and append into dropdown menu
-    d3.json('Belly-Button-Biodiversity/data/samples.json')
+    d3.json('/Belly-Button-Biodiversity/data/samples.json')
         .then(subject => subject.names
         .forEach(name => dropdownMenu
             .append('option')
